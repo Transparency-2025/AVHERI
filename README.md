@@ -1,8 +1,3 @@
-
-
-
---- START OF FILE Paste April 30, 2026 - 3:00PM ---
-
 # AVHERI Project Plan V4.0
 ## Acoustic Violence, Harassment & Exploitation Research Initiative
 
