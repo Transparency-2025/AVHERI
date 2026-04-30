@@ -1,10 +1,19 @@
- # Project Plan: Acoustic Violence/Harassment/Exploitation Research Initiative
+
+
+
+Here is the fully updated, comprehensive **V2.0 Project Plan for AVHERI**. This version directly integrates the strategic analysis, technological enhancements (GDPR-compliant pipelines, extended frequency hardware), institutional credibility safeguards, and funding pathways discussed in the previous review.
+
+---
+
+# Project Plan V2.0: AVHERI 
+**Acoustic Violence, Harassment & Exploitation Research Initiative**
 
 ## 1. Project Overview & Mission
 
-**Project Name:** AVHERI — Acoustic Violence, Harassment & Exploitation Research Initiative
+**Project Name:** AVHERI 
+**Mission:** To systematically research, document, and combat acoustic violence and tech-facilitated acoustic abuse. We aim to establish an empirically rigorous, privacy-preserving, and forensic-grade knowledge base that empowers survivors, informs policy, and equips legal and law enforcement frameworks to address non-obvious acoustic threats.
 
-**Mission:** To systematically research, document, and combat acoustic violence, harassment, and exploitation through evidence-based research, public awareness campaigns, survivor-centered tool development, and multi-stakeholder advocacy.
+**Core Philosophy:** *Survivor-Centered, Forensically Sound, Academically Anchored, Privacy-Preserving.*
 
 ---
 
@@ -12,169 +21,119 @@
 
 | # | Goal | Description | Priority |
 |---|------|-------------|----------|
-| 1 | **Research & Documentation** | Establish a rigorous, peer-reviewed knowledge base on acoustic violence mechanisms, health impacts, and detection methodologies | Critical |
-| 2 | **Public Awareness & Education** | Demystify acoustic violence for the general public, media, and policymakers; reduce stigma for survivors | Critical |
-| 3 | **Tool Development & Resources** | Build accessible, forensic-grade detection and documentation tools for individuals and organizations | High |
-| 4 | **Organizational Engagement** | Forge partnerships with government departments, NGOs, charities, and advocacy groups for systemic change | High |
-| 5 | **Policy & Legal Advocacy** | Contribute to legislative frameworks, regulatory standards, and evidentiary protocols | Medium |
-| 6 | **Survivor Support Network** | Create safe channels for reporting, validation, and referral to appropriate services | Medium |
+| 1 | **Academic Anchoring & IRB** | Secure a core university partnership (e.g., TCD, DCU) to act as an Institutional Review Board (IRB) and provide empirical credibility. | **Critical (Immediate)** |
+| 2 | **Privacy-Preserving Tech** | Build forensic-grade detection tools that capture acoustic abuse data (spectrograms/dB) without violating GDPR or wiretapping laws (e.g., via Edge VAD speech-scrubbing). | **Critical** |
+| 3 | **Research & Documentation** | Establish a peer-reviewed knowledge base encompassing audible harassment, infrasound (<20Hz), and ultrasound (>20kHz) mechanisms. | High |
+| 4 | **Triage & Survivor Support** | Develop standardized, evidence-based triage protocols to validate environmental acoustic harassment and provide legal/referral pathways. | High |
+| 5 | **Public & Institutional Awareness** | Educate the public, policymakers, and law enforcement on "Tech-Facilitated Acoustic Abuse & Anti-Social Behaviour." | High |
+| 6 | **Policy & Funding** | Secure sustainable funding (EU Horizon, IRC) to drive long-term legislative and regulatory changes via bodies like the EPA. | Medium |
 
 ---
 
 ## 3. Workstreams & Deliverables
 
 ### Workstream A: Research & Evidence Base
+*Anchored by rigorous academic standards to avoid credibility traps.*
 
 | Phase | Activity | Deliverable | Timeline |
 |-------|----------|-------------|----------|
-| A1 | Literature Review & Gap Analysis | Annotated bibliography; research gaps report | Months 1–3 |
-| A2 | Field Study Protocol Development | Ethical review; standardized measurement protocols | Months 2–4 |
-| A3 | Data Collection & Analysis | Acoustic measurement datasets; health impact correlations | Months 4–12 |
-| A4 | Peer Review & Publication | White papers; journal submissions; conference presentations | Ongoing |
-| A5 | Forensic Standards Development | Chain-of-custody protocols; admissibility guidelines | Months 6–12 |
+| A1 | **Academic Anchor & IRB Approval** | Formal MOU with university; full Ethical Review clearance. | Months 1–2 |
+| A2 | **Literature Review & Gap Analysis** | Annotated bibliography focusing on infrasound, ultrasound, and targeted acoustic tech. | Months 1–3 |
+| A3 | **Triage Protocol Development** | Standardized intake metrics to isolate verifiable environmental abuse from other phenomena. | Months 2–3 |
+| A4 | **Field Study Protocol** | Deployment of standardized measurement arrays; health impact correlation datasets. | Months 4–12 |
+| A5 | **Forensic & Evidentiary Standards** | Chain-of-custody protocols; cross-jurisdictional admissibility guidelines. | Months 6–12 |
 
-**Key Research Questions:**
-- Psychoacoustic mechanisms of harassment (masking, amplitude modulation, directional audio)
-- Health impacts: sleep disruption, cardiovascular stress, neurological effects, psychological trauma
-- Detection methodologies: microphone arrays, spectral analysis, EM correlation
-- Legal definitions and evidentiary standards across jurisdictions
-
----
-
-### Workstream B: Public Awareness & Education
+### Workstream B: Public Awareness & Institutional Education
+*Framed to ensure maximum institutional engagement.*
 
 | Phase | Activity | Deliverable | Timeline |
 |-------|----------|-------------|----------|
-| B1 | Brand & Messaging Framework | Style guide; key messages; survivor-sensitive language | Month 1 |
-| B2 | Digital Presence | Website; social media channels; newsletter | Months 1–2 |
-| B3 | Educational Content | Infographics; explainer videos; fact sheets | Months 2–6 |
-| B4 | Media Engagement | Press kits; expert spokesperson training; op-eds | Months 3–12 |
-| B5 | Community Workshops | Training modules for housing associations, Gardaí, social workers | Months 6–12 |
+| B1 | **Brand & Messaging Framework** | Style guide; survivor-sensitive language; "Tech-Facilitated Abuse" framing. | Month 1 |
+| B2 | **Digital Presence** | Launch of central hub, open-source repositories, and educational resources. | Months 1–2 |
+| B3 | **Survivor Triage Portal** | Secure, guided intake form for legally admissible and scientifically useful incident logging. | Month 3 |
+| B4 | **Law Enforcement & Agency Training** | Modules for Gardaí, EPA, and housing associations framed around modern ASB (Anti-Social Behaviour). | Months 6–12 |
 
-**Awareness Campaign Themes:**
-- "Sound Can Be a Weapon": Public education on non-obvious acoustic threats
-- "Document, Don't Suffer": Empowering survivors with forensic tools
-- "Hear the Unheard": Advocacy for regulatory recognition
+### Workstream C: Tool Development (Privacy-Preserving Tech Stack)
+*Redesigned to eliminate GDPR/wiretapping risks and capture extreme frequencies.*
 
----
+| Tool | Description | Tech Stack & Hardware | Status |
+|------|-------------|-----------------------|--------|
+| **SCADMS v2.0** (Core Pipeline) | Real-time, continuous acoustic attack detection. **Privacy feature:** Uses Edge VAD (Voice Activity Detection) to scrub/mute human speech. **Storage:** Saves high-res spectrogram data and dB logs instead of raw `.wav` files. | Python, Silero VAD, SQLite, Cryptographic Hashing (SHA-256) | Scoping |
+| **Hardware Integration** | Support beyond UMIK-1. Integration of Infrasonic sensors (modified barometers/<20Hz mics) and Ultrasonic detectors (>20kHz). | IoT protocols, USB Audio | Planned |
+| **AuraConv** | Web-based audio filter with polarity inversion and customizable masking/white noise generation. | JavaScript/JSFX, Cloudflare | In Dev |
+| **Forensic Audio Web App** | One-click emergency web recorder with embedded chain-of-custody features and geographic/temporal hashing. | HTML5, Web Audio API | In Dev |
 
-### Workstream C: Tool Development & Resources
+### Workstream D: Organizational Engagement & Funding Pipeline
 
-| Tool | Description | Tech Stack | Status |
-|------|-------------|------------|--------|
-| **SCADMS** | Real-time acoustic attack detection with UMIK-1, GPS logging, forensic hashing | Python, REW integration, SQLite | In Development |
-| **AuraConv** | Web-based audio filter with polarity inversion, white noise generation | JavaScript/JSFX, Cloudflare | In Development |
-| **Forensic Audio Recorder** | Single-file web app with chain-of-custody features, SHA-256/Blake3 hashing | HTML5, Web Audio API | In Development |
-| **Acoustic Harassment Measurement Pipeline** | CSV/JSON ingestion, spectrogram analysis, EM correlation detection | Python, matplotlib, pandas | In Development |
-| **Survivor Documentation Kit** | Standardized templates for incident logging, evidence packaging | Markdown, PDF export | Planned |
-
-**Resource Library:**
-- Legal rights guides (tenant, employee, disability rights contexts)
-- Measurement best practices
-- Expert witness directory
-- Jurisdiction-specific reporting pathways
+| Target Category | Objective | Key Targets |
+|-----------------|-----------|-------------|
+| **Academic Anchor** | IRB approval, lab calibration, joint research. | TCD Acoustics, DCU Forensic Science, UCD |
+| **Government/Regulatory** | Policy inclusion, noise enforcement guidelines. | EPA (Environmental Protection Agency), Dept of Justice, An Garda Síochána |
+| **NGOs & Legal** | Survivor referral, joint advocacy, rights defense. | FLAC, SAFE Ireland, Threshold |
+| **Grant Bodies (Funding)** | Long-term operational sustainability. | **EU Horizon Europe** (Civil Security), **IRC** (Enterprise Partnership), **NGI** (Privacy Tech Grants) |
 
 ---
 
-### Workstream D: Organizational Engagement
+## 4. Expanded GitHub Architecture
 
-#### Target Stakeholder Map
+To facilitate open-source contributions and maintain professional organization, the AVHERI GitHub will be structured as follows:
 
-| Category | Organizations | Engagement Objective |
-|----------|---------------|----------------------|
-| **Government Departments** | Dept of Justice (Ireland); Dept of Housing; HSE; An Garda Síochána; EPA | Policy inclusion; data sharing; regulatory enforcement |
-| **NGOs & Charities** | Women's Aid; SAFE Ireland; Threshold; FLAC; Pavee Point | Referral pathways; joint advocacy; survivor support |
-| **Disability Rights Groups** | Disability Federation of Ireland; Inclusion Ireland | Intersectional advocacy; accessibility standards |
-| **Academic Institutions** | TCD Acoustics; UCD Psychology; DCU Forensic Science | Research partnerships; student projects; peer review |
-| **International Bodies** | WHO (noise guidelines); EU FRA; Council of Europe | Standards alignment; cross-border cases |
-| **Professional Bodies** | Irish Acoustical Society; Engineers Ireland | Technical credibility; expert witness pool |
-
-**Engagement Tactics:**
-- Formal partnership MOUs
-- Joint research proposals
-- Co-branded awareness campaigns
-- Training delivery (e.g., Gardaí recognition training)
-- Consultation responses to government bills
+*   📂 **`AVHERI/core-documentation`**: Whitepapers, IRB applications, literature reviews, and standardized empirical measurement protocols.
+*   📂 **`AVHERI/SCADMS`**: The Python codebase for the privacy-preserving acoustic pipeline (incorporating VAD and spectrogram generation).
+*   📂 **`AVHERI/Forensic-Audio-App`**: The frontend Web Audio API tool codebase.
+*   📂 **`AVHERI/Survivor-Resources`**: Markdown-based legal rights guides, intake triage templates, and hardware setup guides (UMIK-1/Infrasound).
 
 ---
 
-## 4. Governance & Structure
+## 5. Governance & Structure
 
-### Organizational Structure
-
-```
+```text
 Project Lead (Declan O'Sullivan)
-├── Research Director
-│   ├── Literature Review Team
-│   ├── Field Study Team
+├── Academic & Research Director
+│   ├── University Liaison (IRB Coordinator)
+│   ├── Frequency Analysts (Infrasound/Ultrasound)
 │   └── Forensic Standards Team
-├── Communications Director
-│   ├── Digital Content Team
-│   ├── Media Relations
-│   └── Community Outreach
-├── Technology Lead
-│   ├── Detection Tools
-│   ├── Documentation Tools
-│   └── Infrastructure
-└── Advocacy & Partnerships Lead
-    ├── Government Liaison
-    ├── NGO Coordination
-    └── Legal Policy Advisor
+├── Technology & Privacy Lead
+│   ├── SCADMS / Edge VAD Developers
+│   ├── Hardware Integration (Sensors)
+│   └── Infrastructure & Hashing
+├── Survivor Triage & Advocacy Lead
+│   ├── Intake Coordinator (Triage Protocol)
+│   ├── Legal Policy Advisor
+│   └── NGO Coordination
+└── Communications & Grant Director
+    ├── EU/IRC Grant Writing
+    ├── Agency Outreach (EPA, Gardaí)
+    └── Digital Content Team
 ```
 
-### Advisory Board (Proposed)
-- Acoustic engineer / forensic audio expert
-- Public health researcher (environmental noise)
-- Human rights lawyer
-- Survivor advocate
-- Cybersecurity researcher (side-channel attacks)
+---
+
+## 6. Upgraded Risk Register
+
+| Risk | Likelihood | Impact | Mitigation Strategy |
+|------|------------|--------|---------------------|
+| **GDPR / Wiretapping Violations** (Capturing neighbor conversations) | High | Critical | Implement Edge VAD speech-scrubbing; enforce spectrogram-first `.csv` logging instead of raw `.wav` recording. |
+| **"Credibility Trap"** (Association with unverified conspiracy claims) | High | Critical | Strict use of the Triage Protocol; secure tier-1 University IRB backing; adhere strictly to empirical, data-driven forensics. |
+| **Survivor safety compromised** | Medium | Critical | Anonymization protocols; secure encrypted databases; ethical review oversight. |
+| **Hardware Limitations** (Missing attacks outside human hearing) | Medium | High | Expand hardware specs to mandate infrasound (<20Hz) and ultrasound (>20kHz) sensors. |
+| **Funding shortfall** | High | High | Immediately initiate applications for EU Horizon and NGI privacy grants. |
 
 ---
 
-## 5. Milestone Timeline
+## 7. Success Metrics (Year 1)
 
-| Quarter | Key Milestones |
-|---------|----------------|
-| **Q1 (Months 1–3)** | Project launch; website live; literature review complete; SCADMS v0.1 release; initial NGO outreach |
-| **Q2 (Months 4–6)** | First field study data; AuraConv public beta; Gardaí awareness briefing; first white paper draft |
-| **Q3 (Months 7–9)** | Peer review submission; survivor documentation kit launch; policy consultation response; conference presentation |
-| **Q4 (Months 10–12)** | Annual report; forensic standards v1.0; partnership MOUs signed; funding proposal for Year 2 |
-
----
-
-## 6. Risk Register
-
-| Risk | Likelihood | Impact | Mitigation |
-|------|------------|--------|------------|
-| Survivor safety compromised during research | Medium | Critical | Ethical review; anonymization protocols; security training |
-| Legal threats from accused parties | Medium | High | Legal defense fund; defamation insurance; careful language |
-| Technical tool false positives | Medium | Medium | Rigorous calibration; clear disclaimers; expert validation |
-| Funding shortfall | High | High | Diversified funding streams; volunteer model; phased delivery |
-| Stakeholder skepticism | Medium | Medium | Peer-reviewed evidence; credible spokespeople; incremental wins |
+*   **Institutional:** 1 Core Academic Partnership secured (IRB approved).
+*   **Funding:** Minimum 2 major grant applications submitted (EU/National).
+*   **Technical:** SCADMS v2.0 deployed with 100% GDPR-compliant speech scrubbing and spectrogram logging.
+*   **Operational:** 500 active tool users; 150 legally admissible evidence packages generated.
+*   **Impact:** Official submission of findings/protocols to the EPA and Dept. of Justice.
 
 ---
 
-## 7. Success Metrics
+## 8. Immediate Action Plan (Next 30 Days)
 
-| Goal | KPI | Target (Year 1) |
-|------|-----|-----------------|
-| Research | Peer-reviewed publications | 2 |
-| Awareness | Website unique visitors | 10,000 |
-| Awareness | Media mentions | 20 |
-| Tools | Active tool users | 500 |
-| Tools | Evidence packages generated | 200 |
-| Engagement | Partner organizations | 15 |
-| Engagement | Policy submissions | 5 |
-| Support | Survivor inquiries handled | 100 |
-
----
-
-## 8. Immediate Next Steps
-
-1. **Finalize project branding** (name, logo, domain registration)
-2. **Set up digital infrastructure** (website, email, GitHub organization)
-3. **Draft and submit ethical review** for field study component
-4. **Schedule initial stakeholder meetings** with 3–5 priority organizations
-5. **Release SCADMS v0.1** with documentation and setup instructions
-6. **Create project README** for GitHub with contribution guidelines
-
+1.  **Deploy GitHub Architecture:** Create the 4 core repositories and upload this V2.0 Project Plan as the Master `README.md`.
+2.  **Draft Academic Outreach:** Send targeted partnership proposals to TCD Acoustics and DCU Forensic Science focusing on joint research and IRB hosting.
+3.  **Prototype SCADMS Privacy Layer:** Build a quick proof-of-concept for the Python Edge VAD (Silero) to demonstrate speech-muting capabilities to potential academic partners.
+4.  **Publish Triage Protocol:** Finalize the v1.0 Survivor Intake Markdown template to begin standardizing the data of incoming survivor reports.
